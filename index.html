@@ -4,22 +4,24 @@
   <link href="main_style.css" rel="stylesheet" type="text/css"/>
 </head>
 <html>
-  <h1>
-    Ciaran Wham
-  </h1>
-  <h3> 
-    "Keer-ran" "WHAM!" 
-  </h3>
-  <body>
-    (like the band, but not affiliated.) <br>
-  </body>
-  <body>
-    Welcome to my webpage! Here I will be linking to various projects I have worked on, and giving a brief description of what it is, what it was for, and if there is any planned future for the projects.
-  </body>
+  <div id="head">
+    <h1 id="head">
+      Ciaran Wham
+    </h1>
+    <h3 id="head"> 
+      "Keer-ran" "WHAM!" 
+    </h3>
+    <body id="head">
+      (like the band, but not affiliated.) <br>
+    </body>
+    <body id="head">
+      Welcome to my webpage! Here I will be linking to various projects I have worked on, and giving a brief description of what it is, what it was for, and if there is any planned future for the projects.
+    </body>
+  </div>
   
   <div id="main_div">
 
-    <div id="side_div" name="left">
+    <div class="side_div" name="left">
       Helpful Links:
       <ul>
         <li><a href="https://github.com/clw549">My github</a></li>
@@ -50,24 +52,26 @@
 
     </div>
     
-    <div id="center_div">
+    <div class="center_div">
 
   
-      <div id="section">
-        <img src="images/Simple_Defenders.png"> 
+      <div class="section">
+        <div>
+          <body>
+            <h2>
+              Simple Defenders
+            </h2>
+            Simple defenders is a simplistically styled tower defence game. With the help of my team we were able to build this game together. Although the game is unfinished, I am the only team member still working on a fork of the game on github. The biggest challenge was getting the whole team on the same page to work on the project. The best way we found to address the issue is strong communication, and someone to lead the development. I ended up leading the development and many of the towers are based off the Cannon tower I made, and most pushes are from combining everyone's branches.
+            <br>
+            links:
+            <ul>
+            <li><a href="https://aidengseay.github.io/SimpleDefenders/" target="_blank">Open a new tab to play the game!</a></li>
+            <li><a href="https://github.com/aidengseay/SimpleDefenders">Look at the repository.</a></li>
+            </ul>
+          </body>
+        </div>
+        <img src="images/Simple_Defenders.png" id="simple-defenders-img"> 
 
-        <body>
-          <h2>
-            Simple Defenders
-          </h2>
-          Simple defenders is a simplistically styled tower defence game. With the help of my team we were able to build this game together. Although the game is unfinished, I am the only team member still working on a fork of the game on github. The biggest challenge was getting the whole team on the same page to work on the project. The best way we found to address the issue is strong communication, and someone to lead the development. I ended up leading the development and many of the towers are based off the Cannon tower I made, and most pushes are from combining everyone's branches.
-          <br>
-          links:
-          <ul>
-          <li><a href="https://aidengseay.github.io/SimpleDefenders/" target="_blank">Open a new tab to play the game!</a></li>
-          <li><a href="https://github.com/aidengseay/SimpleDefenders">Look at the repository.</a></li>
-          </ul>
-        </body>
       </div>
 
       <div>
@@ -85,25 +89,42 @@
         </body>
       </div>
 
-      <div>
+      <div class="section">
+        <div>
+          <h2>
+            Blackjack App
+          </h2>
+          <body>
+            This app was made with one other person, and we made an app using a free database API and a Room Database. For this assignment we were to make an app that follows an architecture, has a database, and an API. The largest challenge was adhering to the MVVM architectual pattern. I helped my groupmate with the architectual pattern, although much of his code was not folliwing it for the most part. 
+            <ul>
+              <li><a href="https://github.com/clw549/BlackjackApp">Link to the app repository.</a></li>
+            </ul> 
+          </body>
+        </div>
         <img src="images/Blackjack_App.png" id="blackjack_app">
+
+      </div>
+
+      <div>
         <h2>
-          Blackjack App
+          Nebulous Enigma
         </h2>
         <body>
-          This app was made with one other person, and we made an app using a free database API and a Room Database. For this assignment we were to make an app that follows an architecture, has a database, and an API. The largest challenge was adhering to the MVVM architectual pattern. I helped my groupmate with the architectual pattern, although much of his code was not folliwing it for the most part. 
-          <br>
+          Nebulous Enigma is a choose your own adventure webpage game. As you play you must make choices that lead you down converging or diverging paths. There are many ways to fail and win. I worked with a team of 6 total people to create documentation, diagrams, and the code. The system is not currently hosted, although the game is playable, you must host it yourself. If you would like to look more into it here is the link to the repository (and all of the documentation):
           <ul>
-            <li><a href="https://github.com/clw549/BlackjackApp">Link to the repository.</a></li>
-          </ul> 
+            <li>
+              <a href="https://github.com/clw549/Nebulous-Enigma">Link to Nebulous Enigma repository</a>
+            </li>
+          </ul>
         </body>
+
       </div>
 
     </div>
 
-    <div id="side_div" name="right">
-      more content goes here (holy grail pattern)
-    </div>
+    
+
+    
 
   </div>
   <div name="bottom_div">
