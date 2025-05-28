@@ -43,11 +43,11 @@ img {
   height:40%;
 }
 
-.center_div {
+div.center_div {
   width: 90%;
 }
 
-.side_div {
+div.side_div {
   width:30%;
   background-color: #91785D;
   margin-right:0;
@@ -86,6 +86,6 @@ h2 {
   margin: 5px;
 }
 
-.section {
+div.section {
   flex-direction: row;
 }
