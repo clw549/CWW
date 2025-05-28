@@ -47,7 +47,7 @@ div.center_div {
   width: 90%;
 }
 
-div.side_div {
+#side_div {
   width:30%;
   background-color: #91785D;
   margin-right:0;
