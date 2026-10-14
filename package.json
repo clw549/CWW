@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "sass": "^1.77.8"
+  },
+  "dependencies": {
+    "chokidar": "^5.0.0"
+  }
+}

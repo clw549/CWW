@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html> 
+  <body>
+<head>
+  <title>Ciaran Wham webpage</title>
+  <link href="main_style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+   <div class="main" id="bubble-container"></div>
+
+<script>
+    const container = document.getElementById("bubble-container");
+
+    for (let x = 1; x <= 30; x++) {
+        const bubble = document.createElement("div");
+
+        bubble.classList.add("bubble", `bubble-${x}`);
+
+        container.appendChild(bubble);
+    }
+</script>
+  <div id="head" class="col">
+    <h1 >
+      Ciaran Wham
+    </h1>
+    <div class="invis center" id="row">
+      <h3 > 
+        "Keer-ran" "WHAM!" 
+      </h3>
+      <p >
+        (like the band, but not affiliated.) <br>
+      </p>
+      <a href="mailto:ciaranwham@yahoo.com">Send me an email!</a>
+    </div>
+    
+  </div>
+
+  <div id="main_div">
+    <div>
+      Helpful Links:
+      <ul>
+        <li><a href="https://github.com/clw549">My github</a></li>
+        <li><a href="index.html">Main page</a></li>
+      </ul>
+      Quick Links in page:
+      <ul>
+        
+        <li><a href="#whats-this">What is this?</a></li>
+        <li><a href="#about me">About me</a></li>
+
+      </ul>
+    </div>
+    <div class="center_div">
+      <h2 id="whats-this">What is this?</h2>
+      <p>
+        this is my personal blog, website, and blabber place. Hosted on 
+        GitHub Pages and slowly maintained by me! It should be at least.
+        I am working on this again to keep my web design skills strong
+        and improving. This also serves as a place that I can be both me
+        and keep things professional, where I can make things fun and 
+        personalized.
+      </p>
+      <h2 id="about me">About me</h2>
+      <p>
+        I am a computer scientist, artist, comedian, and cornball. I try
+        to do a lot of different things, but tech is one of my favorite 
+        things to learn about.
+      </p>
+    </div>
+  </div>
+
+  </body>
+</html>

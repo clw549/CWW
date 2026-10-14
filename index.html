@@ -1,32 +1,59 @@
  <!DOCTYPE html>
+<html> 
+  <body>
 <head>
   <title>Ciaran Wham webpage</title>
   <link href="main_style.css" rel="stylesheet" type="text/css"/>
 </head>
-<html>
-  <div id="head">
-    <h1 id="head">
+
+   <div class="main" id="bubble-container"></div>
+
+<script>
+    const container = document.getElementById("bubble-container");
+
+    for (let x = 1; x <= 30; x++) {
+        const bubble = document.createElement("div");
+
+        bubble.classList.add("bubble", `bubble-${x}`);
+
+        container.appendChild(bubble);
+    }
+
+    for (let x = 1; x <= 15; x++) {
+      const floaty = document.createElement("img");
+
+      floaty.classList.add("floaty", `floaty-${x}`);
+      container.appendChild(floaty)
+    }
+</script>
+  <div id="head" class="col">
+    <h1 >
       Ciaran Wham
     </h1>
-    <h3 id="head"> 
-      "Keer-ran" "WHAM!" 
-    </h3>
-    <body id="head">
-      (like the band, but not affiliated.) <br>
-    </body>
-    <a id="head" href="mailto:ciaranwham@yahoo.com">Send me an email!</a>
-
-    <body id="head">
+    <div id="row" class="invis center">
+      <h3 > 
+        "Keer-ran" "WHAM!" 
+      </h3>
+      <p >
+        (like the band, but not affiliated.) <br>
+      </p>
+      <a href="mailto:ciaranwham@yahoo.com">Send me an email!</a>
+    </div>
+    
+  </div>
+  <div id="welcome">
+    <p>
       Welcome to my webpage! Here I will be linking to various projects I have worked on, and giving a brief description of what it is, what it was for, and if there is any planned future for the projects.
-    </body>
+  </p>
   </div>
   
   <div id="main_div">
-
+    
     <div id="side_div" name="left">
       Helpful Links:
       <ul>
         <li><a href="https://github.com/clw549">My github</a></li>
+        <li><a href="website_blabber.html">Blabber page</a></li>
       </ul>
       Favorite programming things in no particular order:
       <ul>
@@ -55,6 +82,7 @@
     </div>
     
     <div id="center_div">
+      
 
       <div id="section" class="anim">
         <div>
@@ -66,6 +94,8 @@
           not done ideas might go into future games. As for Xidoria: a 3d endless
           shooter arena style game with RPG elements and equipment. Not sure how 
           that tags out exactly, but I want to have fun with it and so far I am! <br/>
+          <img src="images/Xidoria_super_alpha.png" alt="10/9/2026 Xidoria screenshot (smileyface)" id="xidoria-super-alpha-img" class="left-img"/>
+
           <ul>
             <li><a href="https://github.com/clw549/Xidoria" target=""blank>Xidoria GitHub repo linky</a></li>
           </ul>
@@ -89,7 +119,7 @@
           
 
         </div>
-        <img src="images/Xidoria_super_alpha.png" alt="10/9/2026 Xidoria screenshot (smileyface)" id="xidoria-super-alpha-img" class="left-img"/>
+        
       </div>
   
       <div id="section" class="anim">
@@ -112,22 +142,40 @@
 
       </div>
 
-      <div class="anim">
-        <h2>
-          Dungeons and Dragons Tax Calculator
-        </h2>
-        <p>
-          The dungeons and dragons tax calculator (D&D tax calculator). It is a very rudementary calculator mainy as a system to adapt to different architectures. The initial build of the calculator was not directly following an architecture, however there are 4 other architectures. The microservice architecture is the best built I think, the others are not as impressive. For this project I worked with a team (3 people total) to deliver the architectures of the systems. Note there is one static page that will remember you (with cookies) currently online on Github Pages. The biggest challenge in this project was understanding and 
-          <br>
-          links:
-          <ul>
-          <li><a href="https://github.com/clw549/DnD_TaxCalculator">Look at the repository.</a></li>
-          <li><a href="https://clw549.github.io/DnD_TaxCalculator/">Check out the static web page.</a></li>
-          </ul>
-        </p>
-      </div>
+      
 
-      <div id="section" class="anim">
+      
+
+      <div id="large-box">
+        <div class="anim" id="small-box">
+          <h2>
+            Nebulous Enigma
+          </h2>
+          <p>
+            Nebulous Enigma is a choose your own adventure webpage game. As you play you must make choices that lead you down converging or diverging paths. There are many ways to fail and win. I worked with a team of 6 total people to create documentation, diagrams, and the code. The system is not currently hosted, although the game is playable, you must host it yourself. If you would like to look more into it here is the link to the repository (and all of the documentation):
+            <ul>
+              <li>
+                <a href="https://github.com/clw549/Nebulous-Enigma">Link to Nebulous Enigma repository</a>
+              </li>
+            </ul>
+          </p>
+
+        </div>
+        <div id="small-box" class="anim">
+          <h2>
+            Dungeons and Dragons Tax Calculator
+          </h2>
+          <p>
+            The dungeons and dragons tax calculator (D&D tax calculator). It is a very rudementary calculator mainy as a system to adapt to different architectures. The initial build of the calculator was not directly following an architecture, however there are 4 other architectures. The microservice architecture is the best built I think, the others are not as impressive. For this project I worked with a team (3 people total) to deliver the architectures of the systems. Note there is one static page that will remember you (with cookies) currently online on Github Pages. The biggest challenge in this project was understanding and 
+            <br>
+            links:
+            <ul>
+            <li><a href="https://github.com/clw549/DnD_TaxCalculator">Look at the repository.</a></li>
+            <li><a href="https://clw549.github.io/DnD_TaxCalculator/">Check out the static web page.</a></li>
+            </ul>
+          </p>
+        </div>
+        <div id="small-box" class="anim">
         <div>
           <h2>
             Blackjack App
@@ -139,26 +187,11 @@
             </ul> 
           </p>
         </div>
-        <img src="images/Blackjack_App.png" id="blackjack_app">
-
+      <img src="images/Blackjack_App.png" id="blackjack_app">
       </div>
+      
 
-      <div class="anim">
-        <h2>
-          Nebulous Enigma
-        </h2>
-        <p>
-          Nebulous Enigma is a choose your own adventure webpage game. As you play you must make choices that lead you down converging or diverging paths. There are many ways to fail and win. I worked with a team of 6 total people to create documentation, diagrams, and the code. The system is not currently hosted, although the game is playable, you must host it yourself. If you would like to look more into it here is the link to the repository (and all of the documentation):
-          <ul>
-            <li>
-              <a href="https://github.com/clw549/Nebulous-Enigma">Link to Nebulous Enigma repository</a>
-            </li>
-          </ul>
-        </p>
-
-      </div>
-
-    </div>
+    </div >
 
     
 
@@ -167,5 +200,16 @@
   </div>
   <div name="bottom_div">
     Hello World!
+    <div>
+      Assets credit:
+      oMedia: Frutiger Aero UI © 2026 by OnNOff is licensed under 
+      <a href="https://creativecommons.org/licenses/by/4.0/">AerCC-BY 4.0 </a>
+    </div>
+    <div>
+      <a href="https://onnoff.itch.io/aero-media">Itch.io I found the assets </a>
+    </div>
+      
+    Please let me know if this is incorrect attribution! :)
   </div>
+</body>
 </html>
