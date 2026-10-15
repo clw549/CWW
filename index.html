@@ -21,195 +21,206 @@
 
     for (let x = 1; x <= 15; x++) {
       const floaty = document.createElement("img");
+      floaty.src = "images/assets/StarIcon.png"
 
       floaty.classList.add("floaty", `floaty-${x}`);
       container.appendChild(floaty)
     }
 </script>
-  <div id="head" class="col">
-    <h1 >
-      Ciaran Wham
-    </h1>
-    <div id="row" class="invis center">
-      <h3 > 
-        "Keer-ran" "WHAM!" 
-      </h3>
-      <p >
-        (like the band, but not affiliated.) <br>
-      </p>
-      <a href="mailto:ciaranwham@yahoo.com">Send me an email!</a>
-    </div>
-    
-  </div>
-  <div id="welcome">
-    <p>
-      Welcome to my webpage! Here I will be linking to various projects I have worked on, and giving a brief description of what it is, what it was for, and if there is any planned future for the projects.
-  </p>
-  </div>
-  
-  <div id="main_div">
-    
-    <div id="side_div" name="left">
-      Helpful Links:
-      <ul>
-        <li><a href="https://github.com/clw549">My github</a></li>
-        <li><a href="website_blabber.html">Blabber page</a></li>
-      </ul>
-      Favorite programming things in no particular order:
-      <ul>
-        <li>When "it just works"</li>
-        <li>Docker</li>
-        <li>Low level languages (C, MIPS, C#)</li>
-        <li>Python (I learned it first!)</li>
-        <li>Design patterns</li>
-        <li>Microservices</li>
-        <li>MVVM</li>
-        <li>MySQL</li>
-        <li>Game development</li>
-        <li>HTML</li>
-        <li>Static pages</li>
-        <li>Unity</li>
-      </ul>
-      <br>
-      But there is much for me to work on:
-      <ul>
-        <li>Github command line</li>
-        <li>JavaScript</li>
-        <li>Kotlin</li>
-        <li>Java (not used before)</li>
-      </ul>
-
-    </div>
-    
-    <div id="center_div">
+  <div class="content">
+    <div id="head" class="col bubbled">
+      <h1 >
+        Ciaran Wham
+      </h1>
+      <div id="row" class="invis center">
+        <h3 > 
+          "Keer-ran" "WHAM!" 
+        </h3>
+        <p >
+          (like the band, but not affiliated.) <br>
+        </p>
+        <a href="mailto:ciaranwham@yahoo.com">Send me an email!</a>
+      </div>
       
-
-      <div id="section" class="anim">
-        <div>
-          <h2>Xidoria</h2>
-        
-          Xidoria is a game I started as a passion project and have had the 
-          opportunity to work on it. I do not have a perfect direction in mind 
-          for the game yet, but I have some ideas and some of the work for the 
-          not done ideas might go into future games. As for Xidoria: a 3d endless
-          shooter arena style game with RPG elements and equipment. Not sure how 
-          that tags out exactly, but I want to have fun with it and so far I am! <br/>
-          <img src="images/Xidoria_super_alpha.png" alt="10/9/2026 Xidoria screenshot (smileyface)" id="xidoria-super-alpha-img" class="left-img"/>
-
+    </div>
+    <div id="welcome">
+      <p>
+        Welcome to my webpage! Here I will be linking to various projects I have worked on, and giving a brief description of what it is, what it was for, and if there is any planned future for the projects.
+    </p>
+    </div>
+    
+    <div id="main_div">
+      
+      <div id="side_div" name="left">
+        <div class="scrollable">
+          Helpful Links:
           <ul>
-            <li><a href="https://github.com/clw549/Xidoria" target=""blank>Xidoria GitHub repo linky</a></li>
+            <li><a href="https://github.com/clw549">My github</a></li>
+            <li><a href="website_blabber.html">Blabber page</a></li>
           </ul>
-          <h4>10/9/2026 devlog</h4>
-          I have been working on this game for under a week now, and its been coming 
-          along pretty well! I have been intimidated as the line numbers get bigger and even 
-          the forethought is foretought. I want to avoid weird code and odd bugs for 
-          future development, which means I am trying to avoid janky work arounds in
-          favor for things I understand more thouroughly. Aiming for simplicity and 
-          a little bit for elbow grease to ensure I learn a thing or two. So far the
-          largest trouble has been models and the lack of them. I love drawing and 
-          spriting, but trying to do 3d modeling in blender has been troublesome. 
-          It has been fun aswell, but the challenge is there. I found it easiest to
-          throw an idea out and try my best, I am trying to watch some videos to better
-          my skills, but I fear I want to use some models that look good. For the 
-          time being I am using some billboarding images pulled off google, not the 
-          proudest, but it helps me code the bare bones. Hopefully I will remember to 
-          update this. If I don't, maybe email me?
+          Favorite programming things in no particular order:
+          <ul>
+            <li>When "it just works"</li>
+            <li>Docker</li>
+            <li>Low level languages (C, MIPS, C#)</li>
+            <li>Python (I learned it first!)</li>
+            <li>Design patterns</li>
+            <li>Microservices</li>
+            <li>MVVM</li>
+            <li>MySQL</li>
+            <li>Game development</li>
+            <li>HTML</li>
+            <li>Static pages</li>
+            <li>Unity</li>
+          </ul>
+          <br>
+          But there is much for me to work on:
+          <ul>
+            <li>Github command line</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+            <li>Java (not used before)</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="center_div">
+        
 
+        <div id="section" class="anim bubbled">
+          <div>
+            <h2>Xidoria</h2>
           
-          
+            Xidoria is a game I started as a passion project and have had the 
+            opportunity to work on it. I do not have a perfect direction in mind 
+            for the game yet, but I have some ideas and some of the work for the 
+            not done ideas might go into future games. As for Xidoria: a 3d endless
+            shooter arena style game with RPG elements and equipment. Not sure how 
+            that tags out exactly, but I want to have fun with it and so far I am! <br/>
+            <img src="images/Xidoria_super_alpha.png" alt="10/9/2026 Xidoria screenshot (smileyface)" id="xidoria-super-alpha-img" class="left-img"/>
 
+            <ul>
+              <li><a href="https://github.com/clw549/Xidoria" target=""blank>Xidoria GitHub repo linky</a></li>
+            </ul>
+            <h4>10/9/2026 devlog</h4>
+            I have been working on this game for under a week now, and its been coming 
+            along pretty well! I have been intimidated as the line numbers get bigger and even 
+            the forethought is foretought. I want to avoid weird code and odd bugs for 
+            future development, which means I am trying to avoid janky work arounds in
+            favor for things I understand more thouroughly. Aiming for simplicity and 
+            a little bit for elbow grease to ensure I learn a thing or two. So far the
+            largest trouble has been models and the lack of them. I love drawing and 
+            spriting, but trying to do 3d modeling in blender has been troublesome. 
+            It has been fun aswell, but the challenge is there. I found it easiest to
+            throw an idea out and try my best, I am trying to watch some videos to better
+            my skills, but I fear I want to use some models that look good. For the 
+            time being I am using some billboarding images pulled off google, not the 
+            proudest, but it helps me code the bare bones. Hopefully I will remember to 
+            update this. If I don't, maybe email me?
+
+            
+            
+
+          </div>
+          
+        </div>
+    
+        <div id="section" class="anim bubbled">
+          <div>
+          <h2>
+                Simple Defenders
+              </h2>
+            <p>
+              
+              Simple defenders is a simplistically styled tower defence game. With the help of my team we were able to build this game together. Although the game is unfinished, I am the only team member still working on a fork of the game on github. The biggest challenge was getting the whole team on the same page to work on the project. The best way we found to address the issue is strong communication, and someone to lead the development. I ended up leading the development and many of the towers are based off the Cannon tower I made, and most pushes are from combining everyone's branches.
+              <br>
+              links:
+              <ul>
+              <li><a href="https://aidengseay.github.io/SimpleDefenders/" target="_blank">Open a new tab to play the game!</a></li>
+              <li><a href="https://github.com/aidengseay/SimpleDefenders">Look at the repository.</a></li>
+              </ul>
+            </p>
+          <img src="images/Simple_Defenders.png" id="simple-defenders-img"> 
+
+          </div>
+
+        </div>
+
+        
+
+        
+
+        <div id="large-box">
+          <div class="anim bubbled" id="small-box">
+            <h2>
+              Nebulous Enigma
+            </h2>
+            <p>
+              Nebulous Enigma is a choose your own adventure webpage game. As you play you must make choices that lead you down converging or diverging paths. There are many ways to fail and win. I worked with a team of 6 total people to create documentation, diagrams, and the code. The system is not currently hosted, although the game is playable, you must host it yourself. If you would like to look more into it here is the link to the repository (and all of the documentation):
+              <ul>
+                <li>
+                  <a href="https://github.com/clw549/Nebulous-Enigma">Link to Nebulous Enigma repository</a>
+                </li>
+              </ul>
+            </p>
+
+          </div>
+          <div id="small-box" class="bubbled">
+            <h2>
+              Dungeons and Dragons Tax Calculator
+            </h2>
+            <p>
+              The dungeons and dragons tax calculator (D&D tax calculator). It is a very rudementary calculator mainy as a system to adapt to different architectures. The initial build of the calculator was not directly following an architecture, however there are 4 other architectures. The microservice architecture is the best built I think, the others are not as impressive. For this project I worked with a team (3 people total) to deliver the architectures of the systems. Note there is one static page that will remember you (with cookies) currently online on Github Pages. The biggest challenge in this project was understanding and 
+              <br>
+              links:
+              <ul>
+              <li><a href="https://github.com/clw549/DnD_TaxCalculator">Look at the repository.</a></li>
+              <li><a href="https://clw549.github.io/DnD_TaxCalculator/">Check out the static web page.</a></li>
+              </ul>
+            </p>
+          </div>
+
+          <div id="small-box" class="bubbled">
+          <div>
+            <h2>
+              Blackjack App
+            </h2>
+            <p>
+              This app was made with one other person, and we made an app using a free database API and a Room Database. For this assignment we were to make an app that follows an architecture, has a database, and an API. The largest challenge was adhering to the MVVM architectual pattern. I helped my groupmate with the architectual pattern, although much of his code was not folliwing it for the most part. 
+              <ul>
+                <li><a href="https://github.com/clw549/BlackjackApp">Link to the app repository.</a></li>
+              </ul> 
+            </p>
+          </div>
+        <img src="images/Blackjack_App.png" id="blackjack_app">
         </div>
         
-      </div>
-  
-      <div id="section" class="anim">
-        <div>
-        <h2>
-              Simple Defenders
-            </h2>
-          <p>
-            
-            Simple defenders is a simplistically styled tower defence game. With the help of my team we were able to build this game together. Although the game is unfinished, I am the only team member still working on a fork of the game on github. The biggest challenge was getting the whole team on the same page to work on the project. The best way we found to address the issue is strong communication, and someone to lead the development. I ended up leading the development and many of the towers are based off the Cannon tower I made, and most pushes are from combining everyone's branches.
-            <br>
-            links:
-            <ul>
-            <li><a href="https://aidengseay.github.io/SimpleDefenders/" target="_blank">Open a new tab to play the game!</a></li>
-            <li><a href="https://github.com/aidengseay/SimpleDefenders">Look at the repository.</a></li>
-            </ul>
-          </p>
-        </div>
-        <img src="images/Simple_Defenders.png" id="simple-defenders-img"> 
 
-      </div>
+      </div >
 
       
 
       
 
-      <div id="large-box">
-        <div class="anim" id="small-box">
-          <h2>
-            Nebulous Enigma
-          </h2>
-          <p>
-            Nebulous Enigma is a choose your own adventure webpage game. As you play you must make choices that lead you down converging or diverging paths. There are many ways to fail and win. I worked with a team of 6 total people to create documentation, diagrams, and the code. The system is not currently hosted, although the game is playable, you must host it yourself. If you would like to look more into it here is the link to the repository (and all of the documentation):
-            <ul>
-              <li>
-                <a href="https://github.com/clw549/Nebulous-Enigma">Link to Nebulous Enigma repository</a>
-              </li>
-            </ul>
-          </p>
-
-        </div>
-        <div id="small-box" class="anim">
-          <h2>
-            Dungeons and Dragons Tax Calculator
-          </h2>
-          <p>
-            The dungeons and dragons tax calculator (D&D tax calculator). It is a very rudementary calculator mainy as a system to adapt to different architectures. The initial build of the calculator was not directly following an architecture, however there are 4 other architectures. The microservice architecture is the best built I think, the others are not as impressive. For this project I worked with a team (3 people total) to deliver the architectures of the systems. Note there is one static page that will remember you (with cookies) currently online on Github Pages. The biggest challenge in this project was understanding and 
-            <br>
-            links:
-            <ul>
-            <li><a href="https://github.com/clw549/DnD_TaxCalculator">Look at the repository.</a></li>
-            <li><a href="https://clw549.github.io/DnD_TaxCalculator/">Check out the static web page.</a></li>
-            </ul>
-          </p>
-        </div>
-        <div id="small-box" class="anim">
-        <div>
-          <h2>
-            Blackjack App
-          </h2>
-          <p>
-            This app was made with one other person, and we made an app using a free database API and a Room Database. For this assignment we were to make an app that follows an architecture, has a database, and an API. The largest challenge was adhering to the MVVM architectual pattern. I helped my groupmate with the architectual pattern, although much of his code was not folliwing it for the most part. 
-            <ul>
-              <li><a href="https://github.com/clw549/BlackjackApp">Link to the app repository.</a></li>
-            </ul> 
-          </p>
-        </div>
-      <img src="images/Blackjack_App.png" id="blackjack_app">
-      </div>
-      
-
-    </div >
-
-    
-
-    
-
-  </div>
-  <div name="bottom_div">
-    Hello World!
-    <div>
-      Assets credit:
-      oMedia: Frutiger Aero UI © 2026 by OnNOff is licensed under 
-      <a href="https://creativecommons.org/licenses/by/4.0/">AerCC-BY 4.0 </a>
     </div>
-    <div>
-      <a href="https://onnoff.itch.io/aero-media">Itch.io I found the assets </a>
+    <div name="side_div" id="side_div">
+      <div>
+        <h3>Extra Links:</h3>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/ciaran-wham/" target="blank">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div>
+        Assets credit:
+        oMedia: Frutiger Aero UI © 2026 by OnNOff is licensed under 
+        <a href="https://creativecommons.org/licenses/by/4.0/">AerCC-BY 4.0 </a>
+      </div>
+      <div>
+        <a href="https://onnoff.itch.io/aero-media">Itch.io I found the assets </a>
+      </div>
+        
+      Please let me know if this is incorrect attribution! :)
     </div>
-      
-    Please let me know if this is incorrect attribution! :)
   </div>
 </body>
 </html>
